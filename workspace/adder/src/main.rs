@@ -1,4 +1,5 @@
 use add_one;
+use rand;
 
 fn main() {
     let num = 10;
@@ -7,4 +8,5 @@ fn main() {
         num,
         add_one::add_one(num)
     );
+    println!("Random number = {}", rand::random::<i32>());
 }
